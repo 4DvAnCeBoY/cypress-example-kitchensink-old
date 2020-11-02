@@ -16,3 +16,6 @@ RUN sudo apt-get install -y \
     libxtst6 \
     xauth \
     xvfb
+RUN sudo apt-get -q update && \
+    sudo apt-get install -yq chromium-browser && \
+    sudo rm -rf /var/lib/apt/lists/*
