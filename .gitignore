@@ -9,3 +9,6 @@ cypress/fixtures/users.json
 .history
 .vscode
 env
+lambdatest-artefacts
+output.json
+lambdatest_run.json

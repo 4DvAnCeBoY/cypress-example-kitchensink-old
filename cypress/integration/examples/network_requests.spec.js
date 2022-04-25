@@ -17,6 +17,7 @@ context('Network Requests', () => {
         expect(response.body).to.have.property('length').and.be.oneOf([500, 501])
         expect(response).to.have.property('headers')
         expect(response).to.have.property('duration')
+        cy.writeFile('./debug/fetch.json', response)
       })
   })
 

@@ -8,22 +8,16 @@
          "browser": "Chrome",
          "platform": "Windows 10",
          "versions": [
-            "latest"
-         ]
-      },
-       {
-         "browser": "firefox",
-         "platform": "Windows 10",
-         "versions": [
-            "latest"
+            "latest","latest","latest"
          ]
       }
    ],
    "run_settings": {
-      "cypress_config_file": "/path/to/<cypress config file>.json",
-      "build_name": "Cypress Sample Demo",
-      "parallels": 1,
-      "specs": "./cypress/integration/examples/*.spec.js"
+      "cypress_config_file": "cypress.json",
+      "build_name": "Cypress Sample Demo 3",
+      "parallels": 10,
+      "specs": "./cypress/integration/examples/network_requests.spec.js",
+      "downloads": "./debug/fetch.json"
    },
    "tunnel_settings": {
       "tunnel": false,
